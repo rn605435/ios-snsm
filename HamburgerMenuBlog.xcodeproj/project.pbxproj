@@ -12,6 +12,7 @@
 		454751C61F19856F002AC524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454751C41F19856F002AC524 /* Main.storyboard */; };
 		454751C81F19856F002AC524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454751C71F19856F002AC524 /* Assets.xcassets */; };
 		454751CB1F19856F002AC524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454751C91F19856F002AC524 /* LaunchScreen.storyboard */; };
+		4B325049E85570B2F702DD49 /* Pods_HamburgerMenuBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ECD187558CB9ECC54BC304 /* Pods_HamburgerMenuBlog.framework */; };
 		6893F89821BD082400F154E4 /* SoutenirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6893F89721BD082400F154E4 /* SoutenirViewController.swift */; };
 		6893F89C21BD140500F154E4 /* ExtensionBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6893F89B21BD140500F154E4 /* ExtensionBackground.swift */; };
 		68D6F65D21C6A468007968A3 /* CoordinatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D6F65C21C6A468007968A3 /* CoordinatesViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02F385CCBFF9F2D4C48CD7A9 /* Pods-HamburgerMenuBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HamburgerMenuBlog.release.xcconfig"; path = "Pods/Target Support Files/Pods-HamburgerMenuBlog/Pods-HamburgerMenuBlog.release.xcconfig"; sourceTree = "<group>"; };
 		454751BD1F19856F002AC524 /* HamburgerMenuBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamburgerMenuBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454751C01F19856F002AC524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		454751C21F19856F002AC524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		68F9336321BBF620001B29DF /* EchouementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchouementViewController.swift; sourceTree = "<group>"; };
 		68F9336521BBF6EB001B29DF /* EntreeauViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntreeauViewController.swift; sourceTree = "<group>"; };
 		68F9336721BBF7CF001B29DF /* HelicebloqueeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelicebloqueeViewController.swift; sourceTree = "<group>"; };
+		990E37122C70B96411FBE3D8 /* Pods-HamburgerMenuBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HamburgerMenuBlog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HamburgerMenuBlog/Pods-HamburgerMenuBlog.debug.xcconfig"; sourceTree = "<group>"; };
+		B9ECD187558CB9ECC54BC304 /* Pods_HamburgerMenuBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HamburgerMenuBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B325049E85570B2F702DD49 /* Pods_HamburgerMenuBlog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,8 @@
 			children = (
 				454751BF1F19856F002AC524 /* HamburgerMenuBlog */,
 				454751BE1F19856F002AC524 /* Products */,
+				C4D379C8BBDED9F833FD15BD /* Pods */,
+				C8887E9A6F435FF75642DF39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +98,23 @@
 			path = HamburgerMenuBlog;
 			sourceTree = "<group>";
 		};
+		C4D379C8BBDED9F833FD15BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				990E37122C70B96411FBE3D8 /* Pods-HamburgerMenuBlog.debug.xcconfig */,
+				02F385CCBFF9F2D4C48CD7A9 /* Pods-HamburgerMenuBlog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8887E9A6F435FF75642DF39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECD187558CB9ECC54BC304 /* Pods_HamburgerMenuBlog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 454751CF1F19856F002AC524 /* Build configuration list for PBXNativeTarget "HamburgerMenuBlog" */;
 			buildPhases = (
+				04FED45C28CBB5BB6D21918D /* [CP] Check Pods Manifest.lock */,
 				454751B91F19856F002AC524 /* Sources */,
 				454751BA1F19856F002AC524 /* Frameworks */,
 				454751BB1F19856F002AC524 /* Resources */,
+				0FB63FE2DE487F9AFC7B25C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +184,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04FED45C28CBB5BB6D21918D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HamburgerMenuBlog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0FB63FE2DE487F9AFC7B25C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HamburgerMenuBlog/Pods-HamburgerMenuBlog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HamburgerMenuBlog/Pods-HamburgerMenuBlog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		454751B91F19856F002AC524 /* Sources */ = {
@@ -313,6 +386,7 @@
 		};
 		454751D01F19856F002AC524 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 990E37122C70B96411FBE3D8 /* Pods-HamburgerMenuBlog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZG53357D46;
@@ -326,6 +400,7 @@
 		};
 		454751D11F19856F002AC524 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F385CCBFF9F2D4C48CD7A9 /* Pods-HamburgerMenuBlog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZG53357D46;
