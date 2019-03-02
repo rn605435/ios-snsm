@@ -10,10 +10,16 @@ import UIKit
 
 class EchouementViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Echouement"
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func btnCall(_ sender: Any) {
+        let url = URL(string: "tel://196")!
+        UIApplication.shared.open(url)
     }
     
 

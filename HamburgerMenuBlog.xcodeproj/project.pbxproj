@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37077F2821FF139E00042433 /* TirfuseeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077F2721FF139E00042433 /* TirfuseeViewController.swift */; };
+		37077F2A21FF13C900042433 /* PanneMoteurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077F2921FF13C900042433 /* PanneMoteurViewController.swift */; };
+		37077F2C21FF13F500042433 /* InquietudeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077F2B21FF13F500042433 /* InquietudeViewController.swift */; };
 		454751C11F19856F002AC524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454751C01F19856F002AC524 /* AppDelegate.swift */; };
 		454751C31F19856F002AC524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454751C21F19856F002AC524 /* ViewController.swift */; };
 		454751C61F19856F002AC524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454751C41F19856F002AC524 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		02F385CCBFF9F2D4C48CD7A9 /* Pods-HamburgerMenuBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HamburgerMenuBlog.release.xcconfig"; path = "Pods/Target Support Files/Pods-HamburgerMenuBlog/Pods-HamburgerMenuBlog.release.xcconfig"; sourceTree = "<group>"; };
+		37077F2721FF139E00042433 /* TirfuseeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TirfuseeViewController.swift; sourceTree = "<group>"; };
+		37077F2921FF13C900042433 /* PanneMoteurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanneMoteurViewController.swift; sourceTree = "<group>"; };
+		37077F2B21FF13F500042433 /* InquietudeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquietudeViewController.swift; sourceTree = "<group>"; };
 		454751BD1F19856F002AC524 /* HamburgerMenuBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamburgerMenuBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454751C01F19856F002AC524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		454751C21F19856F002AC524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +100,9 @@
 				68D6F65E21C6AE14007968A3 /* UserDataViewController.swift */,
 				68D6F66021C6AE2D007968A3 /* WeatherViewController.swift */,
 				68D6F66221C6AE3B007968A3 /* RescueViewController.swift */,
+				37077F2721FF139E00042433 /* TirfuseeViewController.swift */,
+				37077F2921FF13C900042433 /* PanneMoteurViewController.swift */,
+				37077F2B21FF13F500042433 /* InquietudeViewController.swift */,
 			);
 			path = HamburgerMenuBlog;
 			sourceTree = "<group>";
@@ -238,12 +247,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6893F89C21BD140500F154E4 /* ExtensionBackground.swift in Sources */,
+				37077F2A21FF13C900042433 /* PanneMoteurViewController.swift in Sources */,
+				37077F2821FF139E00042433 /* TirfuseeViewController.swift in Sources */,
 				68D6F66321C6AE3B007968A3 /* RescueViewController.swift in Sources */,
 				68D6F66121C6AE2D007968A3 /* WeatherViewController.swift in Sources */,
 				454751C31F19856F002AC524 /* ViewController.swift in Sources */,
 				68F9336421BBF620001B29DF /* EchouementViewController.swift in Sources */,
 				68D6F65F21C6AE14007968A3 /* UserDataViewController.swift in Sources */,
 				454751C11F19856F002AC524 /* AppDelegate.swift in Sources */,
+				37077F2C21FF13F500042433 /* InquietudeViewController.swift in Sources */,
 				68D6F65D21C6A468007968A3 /* CoordinatesViewController.swift in Sources */,
 				6893F89821BD082400F154E4 /* SoutenirViewController.swift in Sources */,
 				68F9336821BBF7CF001B29DF /* HelicebloqueeViewController.swift in Sources */,

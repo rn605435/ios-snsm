@@ -20,7 +20,11 @@ class HelicebloqueeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func btnCall(_ sender: UIButton) {
+        let url = URL(string: "tel://196")!
+        UIApplication.shared.open(url)
+    }
+    
     /*
     // MARK: - Navigation
 
