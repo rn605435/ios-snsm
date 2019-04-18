@@ -47,6 +47,12 @@ class ViewController: UIViewController, UITabBarDelegate {
         UIApplication.shared.open(URL(string: "https://www.snsm.org")! as URL, options: [:], completionHandler: nil)
         
     }
+    
+    @IBAction func btnSoutenir(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: "https://don.snsm.org")! as URL, options: [:], completionHandler: nil)
+    }
+    
+    
     @IBOutlet weak var mainTabBar: UITabBar!
     
     

@@ -158,8 +158,8 @@
 				TargetAttributes = {
 					454751BC1F19856F002AC524 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = ZG53357D46;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 5CV8324LRD;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -401,11 +401,14 @@
 			baseConfigurationReference = 990E37122C70B96411FBE3D8 /* Pods-HamburgerMenuBlog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZG53357D46;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: NICOLAS ROCHETTE (QZACQ2MBZP)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5CV8324LRD;
 				INFOPLIST_FILE = HamburgerMenuBlog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rn605435.snsm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snsm.merensecurite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SNSM Mer en sécurité";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -415,11 +418,14 @@
 			baseConfigurationReference = 02F385CCBFF9F2D4C48CD7A9 /* Pods-HamburgerMenuBlog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZG53357D46;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: NICOLAS ROCHETTE (5CV8324LRD)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5CV8324LRD;
 				INFOPLIST_FILE = HamburgerMenuBlog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rn605435.snsm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snsm.merensecurite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SNSM Mer en sécurité";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -11,30 +11,10 @@ import WebKit
 
 class SoutenirViewController: UIViewController, UIWebViewDelegate {
 
-    @IBOutlet weak var WebView: UIWebView!
-    @IBOutlet weak var activity: UIActivityIndicatorView!
-    
-    
-    func webViewDidStartLoad(_ webView: UIWebView){// show indicator
-        activity.isHidden = false
-        activity.startAnimating()
-    }
-    func webViewDidFinishLoad(_ webView: UIWebView){// hide indicator
-        activity.isHidden = true
-        activity.stopAnimating()
-    }
-    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) { // hide indicator
-        activity.isHidden = true
-        activity.stopAnimating()
-    }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "https://don.snsm.org")
-        let request = URLRequest(url: url!)
-        WebView.delegate = self
-        WebView.loadRequest(request)
+        
     }
     
 

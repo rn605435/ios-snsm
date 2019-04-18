@@ -28,10 +28,24 @@ class CoordinatesViewController: UIViewController, CLLocationManagerDelegate {
         map.isZoomEnabled = true
         map.isScrollEnabled = true
         
+        let image = UIImage(named: "icons8-phone-50") as UIImage?
+        let button = UIButton()
+        button.setImage(image, for: [])
+        button.frame = CGRect(x: 0, y: self.view.frame.height - 200, width: 50, height: 50)
+        button.setTitle("Demandez assistance", for: .normal)
+        map.addSubview(button)
+        button.center.x = self.view.center.x
+        button.addTarget(self, action:#selector(self.buttonClicked), for: .touchUpInside)
+        
         if let coor = map.userLocation.location?.coordinate{
             map.setCenter(coor, animated: true)
         }
     }
+    @objc func buttonClicked() {
+        let url = URL(string: "tel://196")!
+        UIApplication.shared.open(url)
+    }
+    
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
