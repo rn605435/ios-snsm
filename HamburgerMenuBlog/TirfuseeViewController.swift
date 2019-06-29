@@ -2,18 +2,24 @@
 //  TirfuseeViewController.swift
 //  HamburgerMenuBlog
 //
-//  Created by nicolas on 28/01/2019.
-//  Copyright © 2019 Erica Millado. All rights reserved.
-//
+
 
 import UIKit
 
 class TirfuseeViewController: UIViewController {
 
+    @IBOutlet weak var myTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        myTextView.isScrollEnabled = false
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        myTextView.isScrollEnabled = true
     }
     
 

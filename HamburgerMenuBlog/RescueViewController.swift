@@ -41,6 +41,15 @@ class RescueViewController: UIViewController, CLLocationManagerDelegate {
                 map.setCenter(coor, animated: true)
             }
         }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let alertController = UIAlertController(title: "Instructions", message:
+            "Alertez l'équipage \"Homme à la mer Tribord ou Babord\".\nLancez lui la bouée couronne.\nConservez en vue l'homme ou la bouée.\nNotez la position qui s'afficher sur la carte.\nManoeuvrez pour revenir au plus tôt au point de chute.", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
         @objc func buttonClicked() {
             let url = URL(string: "tel://196")!
             UIApplication.shared.open(url)

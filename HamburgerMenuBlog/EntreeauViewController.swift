@@ -2,25 +2,33 @@
 //  EntreeauViewController.swift
 //  HamburgerMenuBlog
 //
-//  Created by Dazinieras on 08/12/2018.
-//  Copyright © 2018 Erica Millado. All rights reserved.
-//
+
 
 import UIKit
 
 class EntreeauViewController: UIViewController {
 
+    @IBOutlet weak var myTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Entree d'eau"
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        myTextView.isScrollEnabled = false
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        myTextView.isScrollEnabled = true
+    }
     
     @IBAction func btnCall(_ sender: UIButton) {
         let url = URL(string: "tel://196")!
         UIApplication.shared.open(url)
     }
+    
+
     
     /*
     // MARK: - Navigation

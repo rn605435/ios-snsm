@@ -2,9 +2,7 @@
 //  InquietudeViewController.swift
 //  HamburgerMenuBlog
 //
-//  Created by nicolas on 28/01/2019.
-//  Copyright © 2019 Erica Millado. All rights reserved.
-//
+
 
 import UIKit
 
