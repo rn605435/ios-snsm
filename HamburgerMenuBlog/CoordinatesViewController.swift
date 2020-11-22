@@ -50,7 +50,7 @@ class CoordinatesViewController: UIViewController, CLLocationManagerDelegate {
         
         map.mapType = MKMapType.standard
         
-        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let span = MKCoordinateSpan.init(latitudeDelta: 0.05, longitudeDelta: 0.05)
         let region = MKCoordinateRegion(center: locValue, span: span)
         map.setRegion(region, animated: true)
         

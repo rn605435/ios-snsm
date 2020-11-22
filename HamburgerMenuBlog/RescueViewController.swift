@@ -44,8 +44,8 @@ class RescueViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         let alertController = UIAlertController(title: "Instructions", message:
-            "Alertez l'équipage \"Homme à la mer Tribord ou Babord\".\nLancez lui la bouée couronne.\nConservez en vue l'homme ou la bouée.\nNotez la position qui s'afficher sur la carte.\nManoeuvrez pour revenir au plus tôt au point de chute.", preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+            "Alertez l'équipage \"Homme à la mer Tribord ou Babord\".\nLancez lui la bouée couronne.\nConservez en vue l'homme ou la bouée.\nNotez la position qui s'afficher sur la carte.\nManoeuvrez pour revenir au plus tôt au point de chute.", preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: nil))
         
         self.present(alertController, animated: true, completion: nil)
     }
@@ -60,7 +60,7 @@ class RescueViewController: UIViewController, CLLocationManagerDelegate {
             
             map.mapType = MKMapType.standard
             
-            let span = MKCoordinateSpanMake(0.05, 0.05)
+            let span = MKCoordinateSpan.init(latitudeDelta: 0.05, longitudeDelta: 0.05)
             let region = MKCoordinateRegion(center: locValue, span: span)
             map.setRegion(region, animated: true)
             

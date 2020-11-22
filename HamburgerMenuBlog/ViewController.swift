@@ -42,12 +42,12 @@ class ViewController: UIViewController, UITabBarDelegate {
     }
     
     @IBAction func btnSnsmUrl(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://www.snsm.org")! as URL, options: [:], completionHandler: nil)
+        UIApplication.shared.open(URL(string: "https://www.snsm.org")! as URL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
         
     }
     
     @IBAction func btnSoutenir(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://don.snsm.org")! as URL, options: [:], completionHandler: nil)
+        UIApplication.shared.open(URL(string: "https://don.snsm.org")! as URL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
     }
     
     
@@ -87,3 +87,8 @@ class ViewController: UIViewController, UITabBarDelegate {
 
 }
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
+}

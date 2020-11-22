@@ -5,7 +5,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
@@ -13,4 +13,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 1d8729efe4307f3f11d8db454025229761db3343
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.0
